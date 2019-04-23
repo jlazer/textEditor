@@ -3,7 +3,7 @@ import os
 import shutil
 
 def leave():
-    sys.exit("You are leaving CUI Text Editor: Appen")
+    sys.exit("You are leaving the Text Editor: Appen")
 def read():
     try:
         filename = input("Enter the file name: ")
@@ -46,7 +46,7 @@ def rename():
         shutil.move(filename, new)
     except Exception as e:
         print("There was a problem: %s" % (e))
-while true:
+while True:
     print("Options: write, read, cwd, exit, delete, rename")
     do = input("What would you like to do today: ")
     if do.lower() == "write":
